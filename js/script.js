@@ -24,7 +24,7 @@ function checkCookies() {
   document.cookie = "numberOfCookies";
 
 
-    document.getElementById('result').innerHTML = 'You have "numberOfCookies" cookies.'
+  document.getElementById('result').innerHTML = 'You have ' + randomNumber + 'cookies.'
 
   }
 
