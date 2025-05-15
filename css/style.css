@@ -42,12 +42,10 @@ h4 {
 
 .button {
   border: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  background: url('path-to-your-image.jpg') no-repeat center center;
+  background-size: contain;
   cursor: pointer;
   border-radius: 100%;
+  width: 200px;
+  height: 200px;
 }
