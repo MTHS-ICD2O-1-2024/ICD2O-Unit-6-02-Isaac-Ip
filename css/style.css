@@ -42,6 +42,7 @@ h4 {
 
 .button {
   border: black;
+  margin: center;
   background-size: contain;
   cursor: pointer;
   border-radius: 100%;
