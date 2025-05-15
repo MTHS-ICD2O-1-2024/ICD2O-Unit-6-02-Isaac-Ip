@@ -24,22 +24,22 @@
   font-size: 1.25rem;
 }
 
-body {
+.body {
   background-color: cornflowerblue;
 }
 
-img {
+.img {
   float: center;
   height: 200px;
 }
 
-h4 {
+.h4 {
   font-size: larger;
   font-family: monospace;
   color: white;
 }
 
-button.mdl-button {
+.mdl-button {
   width: "200px";
   height: "500px";
 }
