@@ -24,7 +24,7 @@ function checkCookies() {
   document.cookie = "numberOfCookies";
 
 
-  document.getElementById('result').innerHTML = 'You have ' + numberOfCookies + 'cookies.'
+  document.getElementById('result').innerHTML = 'You have ' + cookies + 'cookies.'
 
   }
 
@@ -34,11 +34,11 @@ function checkCookies() {
  */
 function addCookie() {
 
-  // input
-  const cookies = "numberOfCookies"
+  let cookies = 0
 
-  // process
-  cookies = "numberOfCookies" + 1
+  cookies++
+  document.getElementById('result').innerHTML =
+    cookies
   }
 
 
