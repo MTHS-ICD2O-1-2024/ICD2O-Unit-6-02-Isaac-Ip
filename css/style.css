@@ -38,3 +38,8 @@ h4 {
   font-family: monospace;
   color: white;
 }
+
+button.mdl-button {
+  width: "200px";
+  height: "500px";
+}
