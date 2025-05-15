@@ -42,7 +42,7 @@ h4 {
 
 .button {
   border: black;
-  background: url('path-to-your-image.jpg') no-repeat center center;
+  background: url('cookie.png') no-repeat center center;
   background-size: contain;
   cursor: pointer;
   border-radius: 100%;
