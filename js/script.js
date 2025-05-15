@@ -16,29 +16,21 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function saves cookies (the cache).
- */
-function checkCookies() {
-
-  // input
-  document.cookie = "numberOfCookies";
-
-
-  document.getElementById('result').innerHTML = 'You have ' + cookies + 'cookies.'
-
-  }
-
-
-/**
  * This function adds a cookie.
  */
 function addCookie() {
 
-  let cookies = 0
-
+  // Retrieve cookies from sessionStorage or initialize to 0
+  let cookies = parseInt(sessionStorage.getItem("cookies") || 0)
+  
+  // Increment cookies
   cookies++
-  document.getElementById('result').innerHTML =
-    cookies
-  }
+  
+  // Save updated cookies back to sessionStorage
+  sessionStorage.setItem("cookies", cookies)
+  
+  // Display the updated cookies count
+  document.getElementById('result').innerHTML = 'You have ' + cookies + ' cookies.'
+}
 
 
