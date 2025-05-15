@@ -30,7 +30,7 @@ body {
 
 img {
   float: center;
-  line-height: 250px;
+  height: 200px;
 }
 
 h4 {
@@ -38,3 +38,8 @@ h4 {
   font-family: monospace;
   color: white;
 }
+
+
+  mdl-button {
+    line-height: 20000px;
+  }
