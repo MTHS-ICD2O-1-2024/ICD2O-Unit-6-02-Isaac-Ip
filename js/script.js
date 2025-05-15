@@ -15,22 +15,22 @@ if (navigator.serviceWorker) {
   })
 }
 
-/**
- * This function adds a cookie.
- */
-function addCookie() {
+let timesClicked = sessionStorage.timesClicked ? Number(sessionStorage.timesClicked) : 0
 
-  // Retrieve cookies from sessionStorage or initialize to 0
-  let cookies = parseInt(sessionStorage.getItem("cookies") || 0)
-  
-  // Increment cookies
-  cookies++
-  
-  // Save updated cookies back to sessionStorage
-  sessionStorage.setItem("cookies", cookies)
-  
-  // Display the updated cookies count
-  document.getElementById('result').innerHTML = 'You have ' + cookies + ' cookies.'
+/**
+ * This function adds to the click counter on the cookie.
+ */
+function clickCookie() {
+  timesClicked++;
+  sessionStorage.timesClicked = timesClicked
+  // Display result
+  document.getElementById('result').innerHTML = "Cookie Count: " + timesClicked
 }
 
+// Update the sessionStorage
+if (sessionStorage.timesClicked) {
+  sessionStorage.timesClicked = Number(sessionStorage.timesClicked) + 1
+} else {
+  sessionStorage.timesClicked = 0
+}
 
