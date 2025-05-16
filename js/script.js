@@ -24,7 +24,7 @@ function clickCookie() {
   timesClicked++;
   sessionStorage.timesClicked = timesClicked
   // Display result
-  document.getElementById('result').innerHTML = "Cookie Count: " + timesClicked
+  document.getElementById('result').innerHTML = "You have " + timesClicked + "cookies."
 }
 
 // Update the sessionStorage
