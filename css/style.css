@@ -9,7 +9,10 @@
 }
 
 .mdl-layout__content {
-justify-content: center;
+  padding-left: 15pt;
+  padding-right: 15pt;
+  padding-top: 15pt;
+  justify-content: center;
 }
 
 .mdl-textfield__error {
