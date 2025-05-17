@@ -9,9 +9,7 @@
 }
 
 .mdl-layout__content {
-  padding-left: 15pt;
-  padding-right: 15pt;
-  padding-top: 15pt;
+justify-content: center;
 }
 
 .mdl-textfield__error {
@@ -42,6 +40,7 @@ h4 {
 }
 
 .button {
+  opacity: 0;
   border: black;
   margin: auto;
   background-size: contain;
