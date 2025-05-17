@@ -17,6 +17,7 @@ if (navigator.serviceWorker) {
 
 let timesClicked = localStorage.timesClicked ? Number(localStorage.timesClicked) : 0
 
+
 /**
  * This function adds to the click counter on the cookie.
  */
@@ -32,5 +33,10 @@ if (localStorage.timesClicked) {
   localStorage.timesClicked = Number(localStorage.timesClicked) + 1
 } else {
   localStorage.timesClicked = 0
+}
+
+function updateCookieCount() {
+  // Update the cookie count
+  document.getElementById('result').innerHTML = "You have " + timesClicked + " cookies."
 }
 
