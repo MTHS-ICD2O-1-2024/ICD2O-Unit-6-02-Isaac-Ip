@@ -43,11 +43,14 @@ h4 {
 }
 
 .button {
-  opacity: 0;
-  border: black;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
   margin: auto;
   background-size: contain;
-  cursor: pointer;
   border-radius: 100%;
   width: 170px;
   height: 170px;
