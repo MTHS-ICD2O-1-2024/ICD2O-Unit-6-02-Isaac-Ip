@@ -24,7 +24,7 @@ function clickCookie() {
   timesClicked++;
   localStorage.timesClicked = timesClicked
   // Display result
-  document.getElementById('result').innerHTML = "You have " + timesClicked + "cookies."
+  document.getElementById('result').innerHTML = "You have " + timesClicked + " cookies."
 }
 
 // Update the localStorage
